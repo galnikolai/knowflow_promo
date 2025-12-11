@@ -49,7 +49,7 @@ export default function Contact() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
-                Have a question or feedback? We'd love to hear from you.
+                Have a question or feedback? We&apos;d love to hear from you.
               </p>
             </motion.div>
           </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                     <div className="text-center py-8">
                       <CheckCircle2 className="h-12 w-12 text-green-500 mx-auto mb-4" />
                       <p className="text-gray-600 dark:text-gray-300">
-                        Thank you! We'll get back to you soon.
+                        Thank you! We&apos;ll get back to you soon.
                       </p>
                     </div>
                   ) : (

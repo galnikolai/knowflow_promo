@@ -85,8 +85,8 @@ export default function Roadmap() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
-                See what we're building and what's coming next. Your feedback
-                shapes our priorities.
+                See what we&apos;re building and what&apos;s coming next. Your
+                feedback shapes our priorities.
               </p>
             </motion.div>
           </div>
@@ -176,7 +176,8 @@ export default function Roadmap() {
               Have a Feature Request?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              We'd love to hear your ideas. Your feedback helps shape KnowFlow.
+              We&apos;d love to hear your ideas. Your feedback helps shape
+              KnowFlow.
             </p>
             <Link href="/contact">
               <Button size="lg" className="px-8">

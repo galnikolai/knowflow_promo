@@ -42,7 +42,7 @@ export default function About() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
-                We're on a mission to help people learn better and remember
+                We&apos;re on a mission to help people learn better and remember
                 longer.
               </p>
             </motion.div>
@@ -74,8 +74,8 @@ export default function About() {
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                 We envision a future where everyone has a personalized learning
                 system that understands how they learn best. A system that
-                doesn't just store information, but actively helps you build
-                understanding and retain knowledge for life.
+                doesn&apos;t just store information, but actively helps you
+                build understanding and retain knowledge for life.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
@@ -126,7 +126,8 @@ export default function About() {
               Join Us
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              We're always looking for passionate people to join our mission.
+              We&apos;re always looking for passionate people to join our
+              mission.
             </p>
             <Link href="/contact">
               <Button size="lg" className="px-8">
