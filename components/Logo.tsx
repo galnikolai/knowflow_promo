@@ -1,0 +1,58 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+interface LogoProps {
+  className?: string;
+  animate?: boolean;
+}
+
+export default function Logo({
+  className = "h-8 w-8",
+  animate = true,
+}: LogoProps) {
+  return (
+    <motion.div
+      className={className}
+      animate={animate ? { rotate: 360 } : {}}
+      transition={
+        animate
+          ? {
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear",
+            }
+          : {}
+      }
+    >
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1024.000000 1024.000000"
+        preserveAspectRatio="xMidYMid meet"
+        className="w-full h-full"
+      >
+        <g
+          transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+          fill="currentColor"
+          stroke="none"
+        >
+          <path
+            d="M4925 7234 c-522 -55 -955 -253 -1315 -601 -131 -126 -207 -217 -302
+-363 -356 -544 -446 -1228 -242 -1849 209 -637 706 -1142 1340 -1361 230 -79
+398 -109 654 -117 364 -11 700 62 1020 222 231 115 383 227 580 424 152 153
+232 256 337 438 259 443 345 999 238 1518 -134 643 -565 1191 -1167 1480 -114
+55 -375 152 -383 143 -2 -2 39 -78 91 -171 52 -92 94 -171 94 -176 0 -4 -68
+-70 -150 -146 -83 -76 -149 -139 -148 -140 2 -1 46 -19 98 -40 127 -50 188
+-82 296 -153 277 -182 493 -459 594 -760 60 -179 74 -277 74 -497 0 -222 -15
+-322 -75 -492 -149 -425 -493 -773 -914 -923 -167 -59 -283 -81 -468 -87 -352
+-12 -628 66 -917 258 -132 88 -326 283 -413 415 -155 234 -233 481 -244 769
+-16 431 131 813 429 1116 231 236 502 375 842 434 103 18 348 20 460 4 61 -8
+80 -7 95 3 27 19 275 250 279 260 4 8 -152 287 -189 339 -16 22 -31 29 -96 39
+-78 12 -421 22 -498 14z"
+          />
+        </g>
+      </svg>
+    </motion.div>
+  );
+}
