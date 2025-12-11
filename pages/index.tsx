@@ -72,7 +72,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-16">
+      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 pt-16">
         {/* Hero Section */}
         <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
@@ -81,13 +81,13 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                 Turn Information Into
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
                   Long-Term Memory
                 </span>
               </h1>
-              <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
                 KnowFlow combines visual knowledge graphs, spaced repetition,
                 and AI assistance to help you learn faster and remember longer.
               </p>
@@ -134,7 +134,7 @@ export default function Home() {
         </section>
 
         {/* Problem → Agitation → Solution */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
               <motion.div
@@ -147,10 +147,10 @@ export default function Home() {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-600 mb-4">
                     <Clock className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
                     The Problem
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     You save tons of notes, but forget what you learned.
                     Information overload makes it impossible to see connections
                     between ideas. Knowledge feels scattered and lost.
@@ -168,10 +168,10 @@ export default function Home() {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-100 text-orange-600 mb-4">
                     <TrendingUp className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
                     The Agitation
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     Every course, article, and book adds to the pile. You invest
                     time learning, but weeks later it&apos;s gone. Your second
                     brain isn&apos;t helping you remember—just collect.
@@ -189,10 +189,10 @@ export default function Home() {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-600 mb-4">
                     <CheckCircle2 className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
                     The Solution
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     KnowFlow turns your notes into a visual knowledge graph,
                     uses spaced repetition to make memories stick, and AI to
                     help you expand and connect ideas effortlessly.
@@ -206,14 +206,14 @@ export default function Home() {
         {/* How KnowFlow Works - 3 Steps */}
         <section
           id="how-it-works"
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900"
         >
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 How KnowFlow Works
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Three powerful features that work together to transform how you
                 learn
               </p>
@@ -282,13 +282,16 @@ export default function Home() {
         </section>
 
         {/* Main Features */}
-        <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section
+          id="features"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Everything You Need to Master Knowledge
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Powerful features designed for serious learners
               </p>
             </div>
@@ -361,13 +364,13 @@ export default function Home() {
         </section>
 
         {/* Who This Is For */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Built for Serious Learners
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 KnowFlow is perfect if you&apos;re ready to take your learning
                 to the next level
               </p>
@@ -446,10 +449,12 @@ export default function Home() {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-4">
                     <stat.icon className="h-8 w-8" />
                   </div>
-                  <div className="text-4xl font-bold text-gray-900 mb-2">
+                  <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600">{stat.label}</div>
+                  <div className="text-gray-600 dark:text-gray-300">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -459,14 +464,14 @@ export default function Home() {
         {/* Testimonials */}
         <section
           id="testimonials"
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
         >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Loved by Learners
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 See what early users are saying about KnowFlow
               </p>
             </div>
@@ -518,10 +523,10 @@ export default function Home() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <div className="font-semibold text-gray-900">
+                      <div className="font-semibold text-gray-900 dark:text-white">
                         {testimonial.name}
                       </div>
-                      <div className="text-sm text-gray-600">
+                      <div className="text-sm text-gray-600 dark:text-gray-400">
                         {testimonial.role}
                       </div>
                     </CardContent>
@@ -533,13 +538,13 @@ export default function Home() {
         </section>
 
         {/* Use Cases */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Real-World Use Cases
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 See how KnowFlow helps in different scenarios
               </p>
             </div>
@@ -611,7 +616,7 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -620,10 +625,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                   Why Knowledge Graphs Matter
                 </h2>
-                <p className="text-xl text-gray-600 mb-8">
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                   Your brain thinks in connections, not in folders. KnowFlow
                   mirrors how you actually learn.
                 </p>
@@ -636,7 +641,9 @@ export default function Home() {
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700 text-lg">{benefit}</span>
+                      <span className="text-gray-700 dark:text-gray-300 text-lg">
+                        {benefit}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -676,7 +683,7 @@ export default function Home() {
                     >
                       <feature.icon className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="font-semibold text-gray-900">
+                    <h3 className="font-semibold text-gray-900 dark:text-white">
                       {feature.title}
                     </h3>
                   </Card>
@@ -687,13 +694,13 @@ export default function Home() {
         </section>
 
         {/* Import & Export */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Import From Anywhere
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Bring your existing knowledge into KnowFlow with ease
               </p>
             </div>
@@ -750,10 +757,10 @@ export default function Home() {
                 >
                   <Card className="h-full text-center hover:shadow-lg transition-shadow p-6">
                     <format.icon className="h-10 w-10 text-primary mx-auto mb-3" />
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
                       {format.name}
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
                       {format.description}
                     </p>
                   </Card>
@@ -764,13 +771,13 @@ export default function Home() {
         </section>
 
         {/* Comparison */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Why KnowFlow?
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 We combine the best of note-taking, spaced repetition, and AI
                 assistance
               </p>
@@ -779,20 +786,20 @@ export default function Home() {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 px-4 font-semibold text-gray-900">
+                  <tr className="border-b-2 border-gray-200 dark:border-gray-700">
+                    <th className="text-left py-4 px-4 font-semibold text-gray-900 dark:text-white">
                       Feature
                     </th>
                     <th className="text-center py-4 px-4 font-semibold text-primary">
                       KnowFlow
                     </th>
-                    <th className="text-center py-4 px-4 font-semibold text-gray-600">
+                    <th className="text-center py-4 px-4 font-semibold text-gray-600 dark:text-gray-400">
                       Notion
                     </th>
-                    <th className="text-center py-4 px-4 font-semibold text-gray-600">
+                    <th className="text-center py-4 px-4 font-semibold text-gray-600 dark:text-gray-400">
                       Anki
                     </th>
-                    <th className="text-center py-4 px-4 font-semibold text-gray-600">
+                    <th className="text-center py-4 px-4 font-semibold text-gray-600 dark:text-gray-400">
                       Obsidian
                     </th>
                   </tr>
@@ -858,9 +865,9 @@ export default function Home() {
                   ].map((row, index) => (
                     <tr
                       key={index}
-                      className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
+                      className="border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                     >
-                      <td className="py-4 px-4 text-gray-700 font-medium">
+                      <td className="py-4 px-4 text-gray-700 dark:text-gray-300 font-medium">
                         {row.feature}
                       </td>
                       <td className="py-4 px-4 text-center">
@@ -896,13 +903,13 @@ export default function Home() {
         </section>
 
         {/* Trust & Security */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Your Privacy Matters
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 We built KnowFlow with privacy and security as core principles
               </p>
             </div>
@@ -955,13 +962,16 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section
+          id="faq"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
+        >
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-600 dark:text-gray-300">
                 Everything you need to know about KnowFlow
               </p>
             </div>
@@ -1027,7 +1037,7 @@ export default function Home() {
                     </button>
                     {openFaq === index && (
                       <CardContent>
-                        <p className="text-gray-600 leading-relaxed">
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </CardContent>
@@ -1040,7 +1050,7 @@ export default function Home() {
         </section>
 
         {/* Secondary CTA */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -1049,10 +1059,10 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                 Start Building Your Second Brain Today
               </h2>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join thousands of learners who are already transforming how they
                 learn and remember.
               </p>
